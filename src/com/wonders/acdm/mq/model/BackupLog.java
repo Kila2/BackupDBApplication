@@ -1,9 +1,7 @@
 package com.wonders.acdm.mq.model;
 
-import com.wonders.acdm.mq.BackupTask;
 import org.apache.log4j.Logger;
 import org.codehaus.plexus.archiver.tar.TarArchiver;
-import org.codehaus.plexus.archiver.tar.TarLongFileMode;
 
 import javax.persistence.*;
 import java.io.File;
@@ -126,7 +124,6 @@ public class BackupLog implements java.io.Serializable {
         if (tarFile == null) {
             if (Files.exists(getFile().toPath())) {
                 TarArchiver archiver = new TarArchiver();
-                archiver.setLongfile(TarLongFileMode.posix);
                 archiver.addFile(getFile(), getFileName());
                 archiver.setCompression(TarArchiver.TarCompressionMethod.gzip);
                 File dstFile = new File(fileDir + File.separator + fileName + ".tar.gz");

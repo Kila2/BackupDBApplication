@@ -24,7 +24,7 @@ public class BackupLogDAO {
         Transaction trans = session.beginTransaction();
         try {
             Criteria criteria = session.createCriteria(BackupLog.class)
-                    .add(Restrictions.eq("status", "1"));
+                    .add(Restrictions.eq("status", "0"));
             criteria.addOrder(Order.asc("id"));
             criteria.setMaxResults(10000);
             list = criteria.list();
@@ -38,7 +38,7 @@ public class BackupLogDAO {
 
     public static void updateStatusToMoved(BackupLog backupLog) {
         try {
-            backupLog.setStatus("2");
+            backupLog.setStatus("1");
             HibernateUtil.update(backupLog);
         } catch (Exception e) {
             logger.error(e.getMessage());

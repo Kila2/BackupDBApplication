@@ -1,0 +1,152 @@
+2017-04-01 15:00:21,659  INFO Version.<clinit>:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-04-01 15:00:21,667  INFO Version.logVersion:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-04-01 15:00:21,670  INFO Environment.<clinit>:239 - HHH000206: hibernate.properties not found
+2017-04-01 15:00:21,672  INFO Environment.buildBytecodeProvider:346 - HHH000021: Bytecode provider name : javassist
+2017-04-01 15:00:21,691  INFO Configuration.configure:2131 - HHH000042: Configuring from file: hibernate.cfg.xml
+2017-04-01 15:00:49,772  INFO Version.<clinit>:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-04-01 15:00:49,779  INFO Version.logVersion:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-04-01 15:00:49,783  INFO Environment.<clinit>:239 - HHH000206: hibernate.properties not found
+2017-04-01 15:00:49,785  INFO Environment.buildBytecodeProvider:346 - HHH000021: Bytecode provider name : javassist
+2017-04-01 15:00:49,803  INFO Configuration.configure:2131 - HHH000042: Configuring from file: hibernate.cfg.xml
+2017-04-01 15:00:49,872  INFO Configuration.doConfigure:2214 - HHH000041: Configured SessionFactory: null
+2017-04-01 15:00:49,940  INFO ConnectionProviderInitiator.instantiateExplicitConnectionProvider:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-04-01 15:00:49,958  INFO C3P0ConnectionProvider.configure:133 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@10.1.40.222:1521:orcl
+2017-04-01 15:00:49,958  INFO C3P0ConnectionProvider.configure:134 - HHH000046: Connection properties: {user=spia_acdm, password=****}
+2017-04-01 15:00:49,959  INFO C3P0ConnectionProvider.configure:137 - HHH000006: Autocommit mode: false
+2017-04-01 15:00:50,052  INFO MLog.<clinit>:92 - MLog clients using log4j logging.
+2017-04-01 15:00:50,330  INFO C3P0Registry.banner:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-04-01 15:00:50,383  INFO AbstractPoolBackedDataSource.getPoolManager:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@92e80bbf [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@c595abf6 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sa2vk9nb6pkhpw5lhr2|62e136d3, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@59a2ce39 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nb6pkhpw5lhr2|19dc67c2, jdbcUrl -> jdbc:oracle:thin:@10.1.40.222:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nb6pkhpw5lhr2|1e67a849, numHelperThreads -> 3 ]
+2017-04-01 15:00:51,709  INFO Dialect.<init>:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2017-04-01 15:00:51,716  INFO LobCreatorBuilder.useContextualLobCreation:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-04-01 15:00:51,815  INFO TransactionFactoryInitiator.initiateService:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-01 15:00:51,819  INFO ASTQueryTranslatorFactory.<init>:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-01 15:00:52,023  INFO SchemaValidator.validate:137 - HHH000229: Running schema validator
+2017-04-01 15:00:52,023  INFO SchemaValidator.validate:145 - HHH000102: Fetching database metadata
+2017-04-01 15:00:52,258  INFO TableMetadata.<init>:66 - HHH000261: Table found: SPIA_ACDM.LOG_BK_TABLE
+2017-04-01 15:00:52,259  INFO TableMetadata.<init>:67 - HHH000037: Columns: [start_time, file_name, file_type, file_dir, end_time, rec_num, id, exec_sql, status]
+2017-04-01 15:02:08,313  INFO Version.<clinit>:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-04-01 15:02:08,323  INFO Version.logVersion:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-04-01 15:02:08,327  INFO Environment.<clinit>:239 - HHH000206: hibernate.properties not found
+2017-04-01 15:02:08,329  INFO Environment.buildBytecodeProvider:346 - HHH000021: Bytecode provider name : javassist
+2017-04-01 15:02:08,348  INFO Configuration.configure:2131 - HHH000042: Configuring from file: hibernate.cfg.xml
+2017-04-01 15:02:08,421  INFO Configuration.doConfigure:2214 - HHH000041: Configured SessionFactory: null
+2017-04-01 15:02:08,496  INFO ConnectionProviderInitiator.instantiateExplicitConnectionProvider:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-04-01 15:02:08,515  INFO C3P0ConnectionProvider.configure:133 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@10.1.40.222:1521:orcl
+2017-04-01 15:02:08,516  INFO C3P0ConnectionProvider.configure:134 - HHH000046: Connection properties: {user=spia_acdm, password=****}
+2017-04-01 15:02:08,516  INFO C3P0ConnectionProvider.configure:137 - HHH000006: Autocommit mode: false
+2017-04-01 15:02:08,610  INFO MLog.<clinit>:92 - MLog clients using log4j logging.
+2017-04-01 15:02:08,671  INFO C3P0Registry.banner:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-04-01 15:02:08,726  INFO AbstractPoolBackedDataSource.getPoolManager:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@971ffe80 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@c9cd9eb7 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sa2vk9nb6r8xu1jl92ti|62e136d3, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@5ddac0fa [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nb6r8xu1jl92ti|19dc67c2, jdbcUrl -> jdbc:oracle:thin:@10.1.40.222:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nb6r8xu1jl92ti|1e67a849, numHelperThreads -> 3 ]
+2017-04-01 15:02:09,996  INFO Dialect.<init>:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2017-04-01 15:02:10,002  INFO LobCreatorBuilder.useContextualLobCreation:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-04-01 15:02:10,110  INFO TransactionFactoryInitiator.initiateService:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-01 15:02:10,114  INFO ASTQueryTranslatorFactory.<init>:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-01 15:02:10,314  INFO SchemaValidator.validate:137 - HHH000229: Running schema validator
+2017-04-01 15:02:10,315  INFO SchemaValidator.validate:145 - HHH000102: Fetching database metadata
+2017-04-01 15:02:10,532  INFO TableMetadata.<init>:66 - HHH000261: Table found: SPIA_ACDM.LOG_BK_TABLE
+2017-04-01 15:02:10,533  INFO TableMetadata.<init>:67 - HHH000037: Columns: [start_time, file_name, file_type, file_dir, end_time, rec_num, id, exec_sql, status]
+2017-04-01 15:14:26,690  INFO Version.<clinit>:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-04-01 15:14:26,700  INFO Version.logVersion:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-04-01 15:14:26,704  INFO Environment.<clinit>:239 - HHH000206: hibernate.properties not found
+2017-04-01 15:14:26,706  INFO Environment.buildBytecodeProvider:346 - HHH000021: Bytecode provider name : javassist
+2017-04-01 15:14:26,724  INFO Configuration.configure:2131 - HHH000042: Configuring from file: hibernate.cfg.xml
+2017-04-01 15:14:26,797  INFO Configuration.doConfigure:2214 - HHH000041: Configured SessionFactory: null
+2017-04-01 15:14:26,866  INFO ConnectionProviderInitiator.instantiateExplicitConnectionProvider:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-04-01 15:14:26,886  INFO C3P0ConnectionProvider.configure:133 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@10.1.40.222:1521:orcl
+2017-04-01 15:14:26,887  INFO C3P0ConnectionProvider.configure:134 - HHH000046: Connection properties: {user=spia_acdm, password=****}
+2017-04-01 15:14:26,887  INFO C3P0ConnectionProvider.configure:137 - HHH000006: Autocommit mode: false
+2017-04-01 15:14:26,982  INFO MLog.<clinit>:92 - MLog clients using log4j logging.
+2017-04-01 15:14:27,236  INFO C3P0Registry.banner:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-04-01 15:14:27,290  INFO AbstractPoolBackedDataSource.getPoolManager:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@5a9b8198 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8d4921cf [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sa2vk9nb772tj1wvivny|62e136d3, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@21564412 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nb772tj1wvivny|19dc67c2, jdbcUrl -> jdbc:oracle:thin:@10.1.40.222:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nb772tj1wvivny|1e67a849, numHelperThreads -> 3 ]
+2017-04-01 15:14:28,606  INFO Dialect.<init>:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2017-04-01 15:14:28,612  INFO LobCreatorBuilder.useContextualLobCreation:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-04-01 15:14:28,705  INFO TransactionFactoryInitiator.initiateService:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-01 15:14:28,710  INFO ASTQueryTranslatorFactory.<init>:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-01 15:14:28,917  INFO SchemaValidator.validate:137 - HHH000229: Running schema validator
+2017-04-01 15:14:28,918  INFO SchemaValidator.validate:145 - HHH000102: Fetching database metadata
+2017-04-01 15:14:29,142  INFO TableMetadata.<init>:66 - HHH000261: Table found: SPIA_ACDM.LOG_BK_TABLE
+2017-04-01 15:14:29,143  INFO TableMetadata.<init>:67 - HHH000037: Columns: [start_time, file_name, file_type, file_dir, end_time, rec_num, id, exec_sql, status]
+2017-04-01 15:14:49,252  INFO Version.<clinit>:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-04-01 15:14:49,259  INFO Version.logVersion:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-04-01 15:14:49,263  INFO Environment.<clinit>:239 - HHH000206: hibernate.properties not found
+2017-04-01 15:14:49,265  INFO Environment.buildBytecodeProvider:346 - HHH000021: Bytecode provider name : javassist
+2017-04-01 15:14:49,282  INFO Configuration.configure:2131 - HHH000042: Configuring from file: hibernate.cfg.xml
+2017-04-01 15:14:49,353  INFO Configuration.doConfigure:2214 - HHH000041: Configured SessionFactory: null
+2017-04-01 15:14:49,422  INFO ConnectionProviderInitiator.instantiateExplicitConnectionProvider:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-04-01 15:14:49,439  INFO C3P0ConnectionProvider.configure:133 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@10.1.40.222:1521:orcl
+2017-04-01 15:14:49,440  INFO C3P0ConnectionProvider.configure:134 - HHH000046: Connection properties: {user=spia_acdm, password=****}
+2017-04-01 15:14:49,440  INFO C3P0ConnectionProvider.configure:137 - HHH000006: Autocommit mode: false
+2017-04-01 15:14:49,532  INFO MLog.<clinit>:92 - MLog clients using log4j logging.
+2017-04-01 15:14:49,595  INFO C3P0Registry.banner:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-04-01 15:14:49,650  INFO AbstractPoolBackedDataSource.getPoolManager:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@1e07e3a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@348e1e71 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sa2vk9nb77k2m15axti8|62e136d3, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@c89b40b4 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nb77k2m15axti8|19dc67c2, jdbcUrl -> jdbc:oracle:thin:@10.1.40.222:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nb77k2m15axti8|1e67a849, numHelperThreads -> 3 ]
+2017-04-01 15:14:50,931  INFO Dialect.<init>:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2017-04-01 15:14:50,938  INFO LobCreatorBuilder.useContextualLobCreation:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-04-01 15:14:51,034  INFO TransactionFactoryInitiator.initiateService:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-01 15:14:51,038  INFO ASTQueryTranslatorFactory.<init>:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-01 15:14:51,249  INFO SchemaValidator.validate:137 - HHH000229: Running schema validator
+2017-04-01 15:14:51,250  INFO SchemaValidator.validate:145 - HHH000102: Fetching database metadata
+2017-04-01 15:14:51,479  INFO TableMetadata.<init>:66 - HHH000261: Table found: SPIA_ACDM.LOG_BK_TABLE
+2017-04-01 15:14:51,480  INFO TableMetadata.<init>:67 - HHH000037: Columns: [start_time, file_name, file_type, file_dir, end_time, rec_num, id, exec_sql, status]
+2017-04-05 09:57:26,869  INFO Version.<clinit>:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-04-05 09:57:26,877  INFO Version.logVersion:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-04-05 09:57:26,880  INFO Environment.<clinit>:239 - HHH000206: hibernate.properties not found
+2017-04-05 09:57:26,882  INFO Environment.buildBytecodeProvider:346 - HHH000021: Bytecode provider name : javassist
+2017-04-05 09:57:26,899  INFO Configuration.configure:2131 - HHH000042: Configuring from file: hibernate.cfg.xml
+2017-04-05 09:57:27,000  INFO Configuration.doConfigure:2214 - HHH000041: Configured SessionFactory: null
+2017-04-05 09:57:27,073  INFO ConnectionProviderInitiator.instantiateExplicitConnectionProvider:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-04-05 09:57:27,092  INFO C3P0ConnectionProvider.configure:133 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@10.1.40.222:1521:orcl
+2017-04-05 09:57:27,092  INFO C3P0ConnectionProvider.configure:134 - HHH000046: Connection properties: {user=spia_acdm, password=****}
+2017-04-05 09:57:27,093  INFO C3P0ConnectionProvider.configure:137 - HHH000006: Autocommit mode: false
+2017-04-05 09:57:27,220  INFO MLog.<clinit>:92 - MLog clients using log4j logging.
+2017-04-05 09:57:27,500  INFO C3P0Registry.banner:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-04-05 09:57:27,551  INFO AbstractPoolBackedDataSource.getPoolManager:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@9d4daaf2 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e21f8aec [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sa2vk9nglmtrg4oj2ja|6279cee3, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@a1c1bd4c [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nglmtrg4oj2ja|62bd765, jdbcUrl -> jdbc:oracle:thin:@10.1.40.222:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nglmtrg4oj2ja|667a738, numHelperThreads -> 3 ]
+2017-04-05 09:57:29,002  INFO Dialect.<init>:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2017-04-05 09:57:29,008  INFO LobCreatorBuilder.useContextualLobCreation:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-04-05 09:57:29,143  INFO TransactionFactoryInitiator.initiateService:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-05 09:57:29,149  INFO ASTQueryTranslatorFactory.<init>:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-05 09:57:29,363  INFO SchemaValidator.validate:137 - HHH000229: Running schema validator
+2017-04-05 09:57:29,363  INFO SchemaValidator.validate:145 - HHH000102: Fetching database metadata
+2017-04-05 09:57:30,668  INFO TableMetadata.<init>:66 - HHH000261: Table found: SPIA_ACDM.LOG_BK_TABLE
+2017-04-05 09:57:30,668  INFO TableMetadata.<init>:67 - HHH000037: Columns: [start_time, file_name, file_type, file_dir, end_time, rec_num, id, exec_sql, status]
+2017-04-05 10:06:39,655  INFO Version.<clinit>:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-04-05 10:06:39,665  INFO Version.logVersion:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-04-05 10:06:39,669  INFO Environment.<clinit>:239 - HHH000206: hibernate.properties not found
+2017-04-05 10:06:39,671  INFO Environment.buildBytecodeProvider:346 - HHH000021: Bytecode provider name : javassist
+2017-04-05 10:06:39,688  INFO Configuration.configure:2131 - HHH000042: Configuring from file: hibernate.cfg.xml
+2017-04-05 10:06:39,758  INFO Configuration.doConfigure:2214 - HHH000041: Configured SessionFactory: null
+2017-04-05 10:06:39,825  INFO ConnectionProviderInitiator.instantiateExplicitConnectionProvider:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-04-05 10:06:39,841  INFO C3P0ConnectionProvider.configure:133 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@10.1.40.222:1521:orcl
+2017-04-05 10:06:39,841  INFO C3P0ConnectionProvider.configure:134 - HHH000046: Connection properties: {user=spia_acdm, password=****}
+2017-04-05 10:06:39,842  INFO C3P0ConnectionProvider.configure:137 - HHH000006: Autocommit mode: false
+2017-04-05 10:06:39,935  INFO MLog.<clinit>:92 - MLog clients using log4j logging.
+2017-04-05 10:06:40,231  INFO C3P0Registry.banner:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-04-05 10:06:40,285  INFO AbstractPoolBackedDataSource.getPoolManager:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@fbe65017 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@569b8a67 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sa2vk9nglyo95ey0k7g|6279cee3, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@5a6271 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nglyo95ey0k7g|62bd765, jdbcUrl -> jdbc:oracle:thin:@10.1.40.222:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nglyo95ey0k7g|667a738, numHelperThreads -> 3 ]
+2017-04-05 10:06:41,536  INFO Dialect.<init>:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2017-04-05 10:06:41,542  INFO LobCreatorBuilder.useContextualLobCreation:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-04-05 10:06:41,632  INFO TransactionFactoryInitiator.initiateService:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-05 10:06:41,636  INFO ASTQueryTranslatorFactory.<init>:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-05 10:06:41,838  INFO SchemaValidator.validate:137 - HHH000229: Running schema validator
+2017-04-05 10:06:41,838  INFO SchemaValidator.validate:145 - HHH000102: Fetching database metadata
+2017-04-05 10:06:42,077  INFO TableMetadata.<init>:66 - HHH000261: Table found: SPIA_ACDM.LOG_BK_TABLE
+2017-04-05 10:06:42,078  INFO TableMetadata.<init>:67 - HHH000037: Columns: [start_time, file_name, file_type, file_dir, end_time, rec_num, id, exec_sql, status]
+2017-04-05 10:07:08,407  INFO Version.<clinit>:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-04-05 10:07:08,413  INFO Version.logVersion:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-04-05 10:07:08,417  INFO Environment.<clinit>:239 - HHH000206: hibernate.properties not found
+2017-04-05 10:07:08,419  INFO Environment.buildBytecodeProvider:346 - HHH000021: Bytecode provider name : javassist
+2017-04-05 10:07:08,438  INFO Configuration.configure:2131 - HHH000042: Configuring from file: hibernate.cfg.xml
+2017-04-05 10:07:08,505  INFO Configuration.doConfigure:2214 - HHH000041: Configured SessionFactory: null
+2017-04-05 10:07:08,571  INFO ConnectionProviderInitiator.instantiateExplicitConnectionProvider:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-04-05 10:07:08,587  INFO C3P0ConnectionProvider.configure:133 - HHH010002: C3P0 using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@10.1.40.222:1521:orcl
+2017-04-05 10:07:08,587  INFO C3P0ConnectionProvider.configure:134 - HHH000046: Connection properties: {user=spia_acdm, password=****}
+2017-04-05 10:07:08,588  INFO C3P0ConnectionProvider.configure:137 - HHH000006: Autocommit mode: false
+2017-04-05 10:07:08,675  INFO MLog.<clinit>:92 - MLog clients using log4j logging.
+2017-04-05 10:07:08,735  INFO C3P0Registry.banner:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-04-05 10:07:08,791  INFO AbstractPoolBackedDataSource.getPoolManager:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@cd90625a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@ba33c084 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sa2vk9nglza8z3g4h85|6279cee3, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 120, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@d20474b4 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nglza8z3g4h85|62bd765, jdbcUrl -> jdbc:oracle:thin:@10.1.40.222:1521:orcl, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 2sa2vk9nglza8z3g4h85|667a738, numHelperThreads -> 3 ]
+2017-04-05 10:07:10,017  INFO Dialect.<init>:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2017-04-05 10:07:10,023  INFO LobCreatorBuilder.useContextualLobCreation:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-04-05 10:07:10,112  INFO TransactionFactoryInitiator.initiateService:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-05 10:07:10,117  INFO ASTQueryTranslatorFactory.<init>:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-05 10:07:10,314  INFO SchemaValidator.validate:137 - HHH000229: Running schema validator
+2017-04-05 10:07:10,314  INFO SchemaValidator.validate:145 - HHH000102: Fetching database metadata
+2017-04-05 10:07:10,541  INFO TableMetadata.<init>:66 - HHH000261: Table found: SPIA_ACDM.LOG_BK_TABLE
+2017-04-05 10:07:10,541  INFO TableMetadata.<init>:67 - HHH000037: Columns: [start_time, file_name, file_type, file_dir, end_time, rec_num, id, exec_sql, status]
