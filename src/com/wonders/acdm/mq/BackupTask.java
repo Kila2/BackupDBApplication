@@ -48,7 +48,10 @@ public class BackupTask {
             for (BackupLog backupLog :
                     backupLogs) {
                 if (backupLog.getTarFile() != null) {
-                    Path dstPath = Paths.get(ConfigProperties.getProperty(ConfigProperties.Property.BACKUP_DST), File.separator,backupLog.getTarFile().getName());
+                    Path dstPath = Paths.get(ConfigProperties.getProperty(ConfigProperties.Property.BACKUP_DST),
+                            File.separator,backupLog.getFileType(),
+                            File.separator,backupLog.getTarFile().getName());
+                    existsPath(dstPath);
                     Files.move(backupLog.getTarFile().toPath(), dstPath, REPLACE_EXISTING);
                     renameSrcFile(backupLog.getFile());
                     updateMovedStatus(backupLog);
@@ -56,6 +59,16 @@ public class BackupTask {
             }
         } catch (IOException ioe) {
             logger.error(String.format("Could not move file: %s%n", ioe.getMessage()));
+        }
+    }
+
+    private void existsPath(Path dstPath) {
+        try {
+            if (!Files.exists(dstPath)) {
+                Files.createDirectory(dstPath);
+            }
+        } catch (IOException e) {
+            logger.error(e.getMessage());
         }
     }
 
