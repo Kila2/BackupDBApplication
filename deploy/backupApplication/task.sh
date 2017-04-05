@@ -12,4 +12,4 @@ echo "`date +%Y-%m-%d_%H:%M:%S` start task......"
 java -jar $EXEC_HOME/BackupDBApplication.jar
 echo "`date +%Y-%m-%d_%H:%M:%S` end task......"
 
-#11 10 * * * sh /Users/Lee/Desktop/backupApplication/task.sh >> /Users/Lee/Desktop/backupApplication/BackupDBApplication.log
+#11 10 * * * sh /root/backupApplication/task.sh >> /root/BackupDBApplication.log
