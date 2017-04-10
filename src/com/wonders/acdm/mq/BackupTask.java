@@ -10,7 +10,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.attribute.FileAttribute;
+import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
 import java.util.List;
+import java.util.Set;
 
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
@@ -23,13 +27,20 @@ public class BackupTask {
 
     BackupTask() {
         try {
+
+            Set<PosixFilePermission> perms =
+                    PosixFilePermissions.fromString("rwxrw-rw-");
+            FileAttribute<Set<PosixFilePermission>> attr =
+                    PosixFilePermissions.asFileAttribute(perms);
+
+
             Path srcPath = Paths.get(ConfigProperties.getProperty(ConfigProperties.Property.BACKUP_RECYLE));
             if (!Files.exists(srcPath)) {
-                Files.createDirectory(srcPath);
+                Files.createDirectory(srcPath,attr);
             }
             Path dstPath = Paths.get(ConfigProperties.getProperty(ConfigProperties.Property.BACKUP_DST));
             if (!Files.exists(dstPath)) {
-                Files.createDirectory(dstPath);
+                Files.createDirectory(dstPath,attr);
             }
         } catch (IOException e) {
             logger.error(e.getMessage());
@@ -65,7 +76,11 @@ public class BackupTask {
     private void existsPath(Path dstPath) {
         try {
             if (!Files.exists(dstPath)) {
-                Files.createDirectory(dstPath);
+                Set<PosixFilePermission> perms =
+                        PosixFilePermissions.fromString("rwxrw-rw-");
+                FileAttribute<Set<PosixFilePermission>> attr =
+                        PosixFilePermissions.asFileAttribute(perms);
+                Files.createDirectory(dstPath, attr);
             }
         } catch (IOException e) {
             logger.error(e.getMessage());
