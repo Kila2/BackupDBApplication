@@ -28,6 +28,8 @@ public class BackupLog implements java.io.Serializable {
     private String status;
     private File file;
     private File tarFile;
+    private String desFileDir;
+    private String desFileName;
 
     @Id
     @Column(name = "ID", unique = true, nullable = false)
@@ -75,6 +77,17 @@ public class BackupLog implements java.io.Serializable {
         return status;
     }
 
+    @Column(name = "DES_FILE_DIR")
+    public String getDesFileDir() {
+        return desFileDir;
+    }
+
+    @Column(name = "DES_FILE_NAME")
+    public String getDesFileName() {
+        return desFileName;
+    }
+
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -109,6 +122,14 @@ public class BackupLog implements java.io.Serializable {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public void setDesFileDir(String desFileDir) {
+        this.desFileDir = desFileDir;
+    }
+
+    public void setDesFileName(String desFileName) {
+        this.desFileName = desFileName;
     }
 
     @Transient

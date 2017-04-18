@@ -9,6 +9,7 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,13 +37,14 @@ public class BackupLogDAO {
         return list;
     }
 
-    public static void updateStatusToMoved(BackupLog backupLog) {
+    public static void updateStatusToMoved(BackupLog backupLog, Path dstPath) {
         try {
             backupLog.setStatus("1");
+            backupLog.setDesFileDir(dstPath.getParent().toString());
+            backupLog.setDesFileName(dstPath.getFileName().toString());
             HibernateUtil.update(backupLog);
         } catch (Exception e) {
             logger.error(e.getMessage());
         }
-
     }
 }

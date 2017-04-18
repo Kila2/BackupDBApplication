@@ -4,6 +4,8 @@ import com.wonders.acdm.mq.dao.BackupLogDAO;
 import com.wonders.acdm.mq.model.BackupLog;
 import com.wonders.acdm.mq.util.ConfigProperties;
 import org.apache.log4j.Logger;
+import org.codehaus.plexus.archiver.tar.TarGZipUnArchiver;
+import org.codehaus.plexus.logging.console.ConsoleLogger;
 
 import java.io.File;
 import java.io.IOException;
@@ -62,10 +64,15 @@ public class BackupTask {
                     Path dstPath = Paths.get(ConfigProperties.getProperty(ConfigProperties.Property.BACKUP_DST),
                             File.separator,backupLog.getFileType(),
                             File.separator,backupLog.getTarFile().getName());
-                    existsPath(dstPath);
+                    existsPath(dstPath.getParent());
                     Files.move(backupLog.getTarFile().toPath(), dstPath, REPLACE_EXISTING);
+                    TarGZipUnArchiver unArchiver = new TarGZipUnArchiver(dstPath.toFile());
+                    unArchiver.setDestDirectory(dstPath.getParent().toFile());
+                    unArchiver.enableLogging(new ConsoleLogger(ConsoleLogger.LEVEL_DEBUG,
+                            "Logger"));
+                    unArchiver.extract();
+                    updateMovedStatus(backupLog,dstPath);
                     renameSrcFile(backupLog.getFile());
-                    updateMovedStatus(backupLog);
                 }
             }
         } catch (IOException ioe) {
@@ -87,8 +94,8 @@ public class BackupTask {
         }
     }
 
-    private void updateMovedStatus(BackupLog backupLog) {
-        BackupLogDAO.updateStatusToMoved(backupLog);
+    private void updateMovedStatus(BackupLog backupLog, Path dstPath) {
+        BackupLogDAO.updateStatusToMoved(backupLog,dstPath);
     }
 
     private void clearRecyle() {
