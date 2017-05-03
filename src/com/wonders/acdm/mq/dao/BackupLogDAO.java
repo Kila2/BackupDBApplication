@@ -1,6 +1,7 @@
 package com.wonders.acdm.mq.dao;
 
 import com.wonders.acdm.mq.model.BackupLog;
+import com.wonders.acdm.mq.util.ConfigProperties;
 import com.wonders.acdm.mq.util.HibernateUtil;
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
@@ -9,7 +10,9 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 
+import java.io.File;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,7 +43,8 @@ public class BackupLogDAO {
     public static void updateStatusToMoved(BackupLog backupLog, Path dstPath) {
         try {
             backupLog.setStatus("1");
-            backupLog.setDesFileDir(dstPath.getParent().toString());
+            String desFileDir = ConfigProperties.getProperty(ConfigProperties.Property.DSTDBABS_PATH);
+            backupLog.setDesFileDir(desFileDir+File.separator+dstPath.getParent().getFileName().toString());
             backupLog.setDesFileName(dstPath.getFileName().toString());
             HibernateUtil.update(backupLog);
         } catch (Exception e) {

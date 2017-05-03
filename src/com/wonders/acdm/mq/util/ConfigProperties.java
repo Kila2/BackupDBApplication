@@ -63,7 +63,7 @@ public class ConfigProperties {
 	}
 
     public enum Property {
-        HOST_NAME("mq.hostName"), PORT("mq.port"), SERVER_NAME("mq.serverName"),MAX_DEPTH("mq.maxDepth"),BACKUP_SRC("mq.backupSrc"),BACKUP_DST("mq.backupDst"),BACKUP_RECYLE("mq.backupRecyle");
+        HOST_NAME("mq.hostName"), PORT("mq.port"), SERVER_NAME("mq.serverName"),MAX_DEPTH("mq.maxDepth"),BACKUP_SRC("mq.backupSrc"),BACKUP_DST("mq.backupDst"),BACKUP_RECYLE("mq.backupRecyle"),DSTDBABS_PATH("mq.dstDBAbsPath");
         
         private String key;
         private Property(String key){
